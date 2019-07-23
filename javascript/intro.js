@@ -155,3 +155,41 @@ String.prototype.repeat= function(numero){
     return repeat
 }
 console.log('toc toc penny...'.repeat(3))
+
+//class
+class Serie {
+    constructor(titulo,episodios, descripcion, episodiosVistos=0){
+        this.tiutlo=titulo;
+        this.episodios=episodios;
+        this.descripcion=descripcion;
+        this.episodiosVistos=episodiosVistos;
+    }
+
+    episodiosPorVer(){
+        return this.episodios-this.episodiosVistos;
+    }
+
+}
+
+let twd= new Serie('TWD', 200,'Una serie', 40)
+let letfover= new Serie('letfover', 200,'Una serie', 40)
+let holo= new Serie('hola', 200,'Una serie', 40)
+let adios= new Serie('adios', 200,'Una serie', 200)
+console.log(twd.episodiosPorVer())
+const series = [ twd, letfover,holo,adios]
+function seriesVistas(misSeries){
+    let seriesVistas =misSeries.filter(n => n.episodiosPorVer() === 0)
+    return seriesVistas
+}
+console.log(seriesVistas(series));
+const nums = [2,4,5,5,9,10];
+
+const tripleNums= nums.map((n)=>n*3);
+
+console.log(tripleNums);
+const numsPares = tripleNums.filter(n=> n%2===0)
+
+console.log(numsPares);
+
+
+
