@@ -1,0 +1,5 @@
+<h1>Mi CV interactivo</h1>
+<h3>Formulario CV</h3>
+<app-from-cv (enviarObj)="cambiarAtributos($event)" (enviarSkill)="cambiarSkill($event)"></app-from-cv>
+<h3>Preview de CV </h3>
+<app-preview-cv [nombre]="nombre" [apellidos]="apellidos" [email]="email" [url]="url" [skill]="skill"></app-preview-cv>

@@ -1,0 +1,7 @@
+.row {
+    align-items: center;
+}
+
+.card-badges > .badge {
+    margin-right: 5px;
+}

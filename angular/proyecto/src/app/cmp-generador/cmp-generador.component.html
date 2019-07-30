@@ -1,0 +1,18 @@
+<h1>Generador de Memes</h1>
+<nav>
+    <ul>
+        <li>
+            <a [routerLink] = "['/formMeme']">Form</a>
+        </li>
+        <li>
+            <a [routerLink] ="['/listaMeme']">Lista de Memes</a>
+        </li>
+    </ul>
+    
+</nav>
+<hr>
+<div id="memeForm">
+<app-cmp-meme [textoArriba]="textoArriba" [textoAbajo]="textoAbajo" [imagenUrl]="imagenUrl" [color]="color" [isFav]="isFav"></app-cmp-meme>
+<app-cmp-form (enviarObj)="cambiarAtributos($event)" ></app-cmp-form>
+</div>
+<router-outlet></router-outlet>

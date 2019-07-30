@@ -1,0 +1,43 @@
+#listaMeme{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+
+
+}
+#meme{
+    display: flex;
+    justify-content: space-evenly;
+
+
+}
+#background {
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 400px;
+    display:flex;
+    justify-content:center;    
+    background-size: cover; 
+    flex-wrap: wrap;
+    text-align: center;
+} 
+.boton_1{
+    text-decoration: none;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: helvetica;
+    font-weight: 300;
+    font-size: 25px;
+    font-style: italic;
+    color: white;
+    background-color: red;
+    border-radius: 15px;
+    border: 3px double darkred;
+  }
+  .boton_1:hover{
+    opacity: 0.6;
+    text-decoration: none;
+  }

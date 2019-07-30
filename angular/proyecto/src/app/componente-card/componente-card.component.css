@@ -1,0 +1,28 @@
+.card{
+    text-align: center;
+    width: 300px;
+    border: 2px solid saddlebrown;
+    padding: 10px;
+    box-shadow: 10px 20px 10px moccasin
+}
+.card h4, .card p, .card a, .card button {
+    margin: 15px;
+}
+button , a{
+    border: 3px solid brown;
+    background-color: burlywood;
+    width : 90px;
+    height: 40px;
+    font-size: 14px;
+    color: black;      
+    border-radius: 15px;                  
+}
+button:hover , a:hover {
+    background-color: palevioletred;
+
+}
+
+.con-flex{
+    display: flex;
+    justify-content: center;
+}

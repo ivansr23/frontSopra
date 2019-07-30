@@ -1,0 +1,10 @@
+#background {
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 400px;
+    display:flex;
+    justify-content:center;    
+    background-size: cover; 
+    flex-wrap: wrap;
+    text-align: center;
+} 

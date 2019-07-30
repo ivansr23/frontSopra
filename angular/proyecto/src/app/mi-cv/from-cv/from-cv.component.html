@@ -1,0 +1,15 @@
+<label for="nombre">Nombre: </label>
+<input type="text" name="nombre"  (input)="enviarTodo($event)">
+<br>
+<label for="apellido">Apellidos: </label>
+<input type="text" name="apellidos" (input)="enviarTodo($event)">
+<br>
+<label for="email">Email: </label>
+<input type="text" name="email" (input)="enviarTodo($event)">
+<br>
+<label for="url">Url Foto: </label>
+<input type="text" name="url" (input)="enviarTodo($event)">
+<br>
+<label for="skill">Skill: </label>
+<input type="text" name="skill" #inputRef> <button type="button" (click)="cogerSkill(inputRef)">Añadir Skill</button>
+<br>

@@ -1,0 +1,35 @@
+<h2>Directivas</h2>
+
+<h3>De atributo</h3>
+<p>Color: {{color}}</p>
+<input type="text" [(ngModel)]="color">
+
+<p [ngStyle]="{color: color, textDecoration: 'line-through'}">Texto azul y tachado</p>
+
+<label>
+  Letra negrita?
+  <input type="checkbox" (change)="negrita = !negrita">
+</label>
+
+<p [ngClass]="{negrita: negrita, letraAmarilla: false}">Texto en negrita y amarillo</p>
+
+<p appMarcar="red" appBlink="blue">Parrafo de pruevas de directivas.ts</p>
+<p appMarcar="blue">Parrafo de pruevas de directivas.ts</p>
+<p appMarcar >Parrafo de pruevas de directivas.ts</p>
+
+<h3>Estructurales</h3>
+<button type="button" (click)="toggleMostrarItem()">Borrar parrafo</button>
+<p *ngIf="mostrarItem; else else2" appMarcar="red" appBlink="blue">Parrafo de pruevas de directivas.ts</p>
+<ng-template #else2>
+    <p appMarcar  >Parrafo de pruevas de directivas.ts(else)</p>
+</ng-template>
+
+<ul>
+  <li *ngFor="let item of items">{{item}}</li>
+</ul>
+
+<div [ngSwitch]="color">
+  <p *ngSwitchCase="'black'">Es color black</p>
+  <p *ngSwitchCase="'white'">Es color white</p>
+  <p *ngSwitchDefault>Es de otro color</p>
+</div>
